@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <form action="" style="margin: 50px;">
+        <fieldset>
+            <Legend>
+                <h1>Registration Form</h1>
+            </Legend>
+            <p>
+                <label for="name">Full Name</label>
+            <p> <input type="text" id="name" name="Full Name" placeholder="Enter your name" required></p>
+            </p>
+
+            <p>
+                <label for="Email">Email Address</label>
+            <p><input type="email" id="Email" name="Email" placeholder="Enter your email" required></p>
+            </p>
+            <p>
+                <label for="mobile">Mobile Number</label>
+            <p><input type="tel" id="mobile" name="Mobile Number" placeholder="Enter your mobile number" required></p>
+            </p>
+            <p>
+                <label for="DOB">Birth Date</label>
+            <p> <input type="date" id="DOB" name="Birth Date" required></p>
+            </p>
+            <p>
+
+                <label>Gender</label>
+            <div>
+                <input type="radio" id="male" name="gender" value="male" required>
+                <label for="male">Male</label><br>
+
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female">Female</label><br>
+
+                <input type="radio" id="other" name="gender" value="other">
+                <label for="other">Other</label>
+            </div>
+            </p>
+            <p>
+            <p><label for="Address">Address</label></p>
+            <textarea name="address" id="Address" placeholder="Enter your physical address"></textarea>
+            </p>
+            <p>
+                <label for="country">Country:</label><br>
+                <select id="country" name="country">
+                    <option value="">--Select Country--</option>
+                    <option value="nepal">Nepal</option>
+                    <option value="india">India</option>
+                    <option value="usa">United States</option>
+                    <option value="uk">United Kingdom</option>
+                    <option value="australia">Australia</option>
+                </select>
+
+            </p>
+
+            <div>
+                <label for="resume"></label>
+                <input type="file" id="resume" name="resume" accept="image/png, image/jpeg, image/jpg, Document/pdf"
+                    required>
+            </div>
+            <label for="postalcode">Postal Code:</label><br>
+            <input type="text" id="postalcode" name="postalcode" placeholder="Enter postal code" required>
+
+
+            <br> <br>
+            <input type="submit" id="submit" value="Submit">
+        </fieldset>
+    </form>
+    </center>
+</body>
+
+</html>
