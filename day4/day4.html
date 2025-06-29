@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            position: relative;
+            background: #000;
+            color: white;
+            width: 60%;
+            height: 500px;
+            margin: 40px;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, 50%);
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            /* gap: 10px; */
+            padding: 10px;
+
+        }
+
+        .inside {
+            /* position: absolute; */
+            /* top: 50%;
+            left: 50%; */
+            /* transform: translate(-50%, -50%); */
+            background: blue;
+            color: white;
+            padding: 40px;
+            width: 45%;
+            height: 80%;
+            box-sizing: border-box;
+
+            /*this is only for this container content*/
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+
+        }
+
+        .first {
+            color: white;
+            background: red;
+            padding: 40px;
+            width: 45%;
+            height: 80%;
+            box-sizing: border-box;
+
+            /*this is only for this container content*/
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        h1 {
+
+            position: absolute;
+            top: 10px;
+            left: 20%;
+            transform: translateX(-50%);
+            color: white;
+            margin: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Day 4</h1>
+        <div class="inside">
+            <p>Welcome to Day 4 of our journey!</p>
+        </div>
+        <div class="first">
+            <p>Today we will explore new concepts and deepen our understanding.</p>
+        </div>
+    </div>
+</body>
+
+</html>
