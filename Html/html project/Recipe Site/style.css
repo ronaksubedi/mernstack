@@ -45,9 +45,31 @@ nav {
   color: rgb(88, 36, 36);
   gap: 30px;
 }
-a {
+#menu > a {
+  position: relative;
+  font-size: 1.5rem;
   text-decoration: none;
+  letter-spacing: 0.5px;
   color: rgb(109, 109, 109);
+  padding: 0 10px;
+  display: inline-block;
+}
+#menu > a::after {
+  content: "";
+  position: absolute;
+  left: 0%;
+  /* top: 0; */
+  bottom: -10px;
+  width: 0;
+  height: 3px;
+  background-color: #008080;
+  transition: width 0.3s ease-in-out;
+}
+#menu > a:hover {
+  color: rgb(26, 26, 26);
+}
+#menu > a:hover::after {
+  width: 100%;
 }
 #home {
   width: 100%;
@@ -185,6 +207,7 @@ h1 {
   height: 100%;
   object-fit: cover;
   flex-shrink: 0;
+  margin: 0;
 }
 
 .text {
@@ -216,6 +239,8 @@ h1 {
   text-align: center;
 }
 #contactus {
+  margin-left: 20px;
+  padding-left: 20px;
   font-size: 1.5rem;
   font-weight: bold;
   color: #008080;
@@ -238,4 +263,9 @@ ul {
   border-top: 1px solid #eee;
   color: #666;
   font-size: 0.9rem;
+}
+a {
+  text-decoration: none;
+  color: rgb(108, 108, 108);
+  margin-right: 15px;
 }
